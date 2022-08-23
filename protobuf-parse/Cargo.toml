@@ -1,11 +1,11 @@
 [package]
 name = "protobuf-parse2"
-version = "4.0.0-alpha.1"
+version = "4.0.0-alpha.2"
 edition = "2021"
 authors = ["Stepan Koltsov <stepan.koltsov@gmail.com>"]
 license = "MIT"
-homepage = "https://github.com/LYF1999/rust-protobuf/tree/master/protobuf-parse/"
-repository = "https://github.com/LYF1999/rust-protobuf/tree/master/protobuf-parse/"
+homepage = "https://github.com/LYF1999/rust-protobuf/tree/protobuf2/protobuf-parse/"
+repository = "https://github.com/LYF1999/rust-protobuf/tree/protobuf2/protobuf-parse/"
 description = """
 Parse `.proto` files.
 
@@ -22,8 +22,8 @@ anyhow    = "1.0.53"
 thiserror = "1.0.30"
 indexmap  = "1.8.0"
 
-protobuf = { path = "../protobuf", package = "protobuf2", version = "=4.0.0-alpha.1" }
-protobuf-support = { path = "../protobuf-support", version = "=4.0.0-alpha.1", package = "protobuf-support2" }
+protobuf = { path = "../protobuf", package = "protobuf2", version = "=4.0.0-alpha.2" }
+protobuf-support = { path = "../protobuf-support", version = "=4.0.0-alpha.2", package = "protobuf-support2" }
 
 [lib]
 # TODO: figure out what to do with bundled linked_hash_map

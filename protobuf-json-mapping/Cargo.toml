@@ -7,7 +7,7 @@ edition = "2021"
 license = "MIT"
 homepage = "https://github.com/LYF1999/rust-protobuf/"
 repository = "https://github.com/LYF1999/rust-protobuf/"
-documentation = "https://github.com/LYF1999/rust-protobuf/blob/master/README.md"
+documentation = "https://github.com/LYF1999/rust-protobuf/blob/protobuf2/README.md"
 description = """
 JSON mapping for Protocol Buffers messages.
 """
@@ -18,8 +18,8 @@ bench = false
 [dependencies]
 thiserror = "1.0.30"
 
-protobuf = { path = "../protobuf", package = "protobuf2", version = "=4.0.0-alpha.1" }
-protobuf-support = { path = "../protobuf-support", version = "=4.0.0-alpha.1", package = "protobuf-support2" }
+protobuf = { path = "../protobuf", package = "protobuf2", version = "=4.0.0-alpha.2" }
+protobuf-support = { path = "../protobuf-support", version = "=4.0.0-alpha.2", package = "protobuf-support2" }
 
 [package.metadata.docs.rs]
 all-features = true
