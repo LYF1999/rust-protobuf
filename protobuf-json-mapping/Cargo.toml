@@ -18,8 +18,8 @@ bench = false
 [dependencies]
 thiserror = "1.0.30"
 
-protobuf = { path = "../protobuf", package = "protobuf2", version = "=4.0.0-alpha.0" }
-protobuf-support = { path = "../protobuf-support", version = "=4.0.0-alpha.0", package = "protobuf-support2" }
+protobuf = { path = "../protobuf", package = "protobuf2", version = "=4.0.0-alpha.1" }
+protobuf-support = { path = "../protobuf-support", version = "=4.0.0-alpha.1", package = "protobuf-support2" }
 
 [package.metadata.docs.rs]
 all-features = true
