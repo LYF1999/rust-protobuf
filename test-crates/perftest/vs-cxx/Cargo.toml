@@ -12,6 +12,7 @@ with-bytes = ["protobuf/with-bytes"]
 
 [dependencies.protobuf]
 path = "../../../protobuf"
+package = "protobuf2"
 
 [dependencies]
 rand = "~0.5"

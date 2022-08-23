@@ -6,6 +6,6 @@ edition = "2021"
 publish = false
 
 [dependencies]
-protobuf = { path = "../../protobuf" }
-protobuf-parse = { path = "../../protobuf-parse" }
+protobuf = { path = "../../protobuf", package = "protobuf2" }
+protobuf-parse = { path = "../../protobuf-parse", package = "protobuf-parse2" }
 tempfile = "3"

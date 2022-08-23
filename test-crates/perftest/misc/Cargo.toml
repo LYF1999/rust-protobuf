@@ -19,6 +19,7 @@ fastrand = "1.4.0"
 
 [dependencies.protobuf]
 path = "../../../protobuf"
+package = "protobuf2"
 features = ["with-bytes"]
 
 [build-dependencies]

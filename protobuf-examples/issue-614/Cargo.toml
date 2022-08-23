@@ -9,7 +9,7 @@ Example for https://github.com/stepancheg/rust-protobuf/issues/614
 """
 
 [dependencies]
-protobuf = { path = "../../protobuf" }
+protobuf = { path = "../../protobuf", package = "protobuf2" }
 
 [build-dependencies]
 protobuf-codegen = { path = "../../protobuf-codegen" }

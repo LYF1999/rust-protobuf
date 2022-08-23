@@ -25,6 +25,6 @@ env_logger   = "0.5.*"
 tempfile     = "3.0"
 bytes = { version = "1.1", optional = true }
 
-protobuf = { path = "../../protobuf" }
+protobuf = { path = "../../protobuf", package = "protobuf2" }
 protobuf-json-mapping = { path = "../../protobuf-json-mapping" }
 protobuf-codegen = { path = "../../protobuf-codegen" }

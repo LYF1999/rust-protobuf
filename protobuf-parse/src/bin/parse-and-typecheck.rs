@@ -2,7 +2,7 @@ use std::env;
 use std::path::PathBuf;
 use std::process::exit;
 
-use protobuf_parse::Parser;
+use protobuf_parse2::Parser;
 
 fn main() {
     let args = env::args_os()
