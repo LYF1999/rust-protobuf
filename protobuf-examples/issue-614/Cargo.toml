@@ -5,7 +5,7 @@ authors = ["Stepan Koltsov <stepan.koltsov@gmail.com>"]
 edition = "2021"
 publish = false
 description= """
-Example for https://github.com/stepancheg/rust-protobuf/issues/614
+Example for https://github.com/LYF1999/rust-protobuf/issues/614
 """
 
 [dependencies]

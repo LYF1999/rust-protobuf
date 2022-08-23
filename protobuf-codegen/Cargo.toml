@@ -4,8 +4,8 @@ version = "4.0.0-alpha.0"
 authors = ["Stepan Koltsov <stepan.koltsov@gmail.com>"]
 edition = "2021"
 license = "MIT"
-homepage = "https://github.com/stepancheg/rust-protobuf/"
-repository = "https://github.com/stepancheg/rust-protobuf/"
+homepage = "https://github.com/LYF1999/rust-protobuf/"
+repository = "https://github.com/LYF1999/rust-protobuf/"
 description = """
 Code generator for rust-protobuf.
 
