@@ -779,7 +779,7 @@ impl<'a> Parser<'a> {
         let from = self.next_field_number()?;
         let to = if self.tokenizer.next_ident_if_eq("to")? {
             if self.tokenizer.next_ident_if_eq("max")? {
-                0x20000000 - 1
+                2147483647
             } else {
                 self.next_field_number()?
             }
@@ -890,6 +890,9 @@ impl<'a> Parser<'a> {
     fn next_enum_opt(&mut self) -> anyhow::Result<Option<WithLoc<Enumeration>>> {
         let loc = self.tokenizer.lookahead_loc();
 
+        let mut reserved_nums = vec![];
+        let mut reserved_names = vec![];
+
         if self.tokenizer.next_ident_if_eq("enum")? {
             let name = self.tokenizer.next_ident()?.to_owned();
 
@@ -900,6 +903,12 @@ impl<'a> Parser<'a> {
             while self.tokenizer.lookahead_if_symbol()? != Some('}') {
                 // emptyStatement
                 if self.tokenizer.next_symbol_if_eq(';')? {
+                    continue;
+                }
+
+                if let Some((field_nums, field_names)) = self.next_reserved_opt()? {
+                    reserved_nums.extend(field_nums);
+                    reserved_names.extend(field_names);
                     continue;
                 }
 
@@ -915,6 +924,8 @@ impl<'a> Parser<'a> {
                 name,
                 values,
                 options,
+                reserved_names,
+                reserved_nums,
             };
             Ok(Some(WithLoc {
                 loc,

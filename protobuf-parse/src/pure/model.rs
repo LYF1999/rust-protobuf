@@ -318,6 +318,9 @@ pub(crate) struct Enumeration {
     pub values: Vec<EnumValue>,
     /// enum options
     pub options: Vec<ProtobufOption>,
+
+    pub reserved_nums: Vec<FieldNumberRange>,
+    pub reserved_names: Vec<String>,
 }
 
 /// A OneOf

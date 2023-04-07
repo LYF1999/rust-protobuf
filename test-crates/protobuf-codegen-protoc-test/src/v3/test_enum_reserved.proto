@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+
+enum T {
+    TEST = 0;
+    reserved 2, 15, 9 to 11, 40 to max;
+    reserved "FOO", "BAR";
+}

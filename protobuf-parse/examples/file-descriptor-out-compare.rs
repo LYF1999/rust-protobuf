@@ -2,7 +2,7 @@ use std::env;
 use std::fs;
 
 use protobuf::text_format;
-use protobuf_parse::Parser;
+use protobuf_parse2::Parser;
 
 enum Which {
     Protoc,
