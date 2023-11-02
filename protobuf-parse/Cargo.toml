@@ -1,6 +1,6 @@
 [package]
 name = "protobuf-parse2"
-version = "4.0.0-alpha.3"
+version = "4.0.0-alpha.4"
 edition = "2021"
 authors = ["Stepan Koltsov <stepan.koltsov@gmail.com>"]
 license = "MIT"
