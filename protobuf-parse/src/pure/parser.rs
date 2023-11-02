@@ -404,7 +404,10 @@ impl<'a> Parser<'a> {
         let mut r = ProtobufConstantMessage::default();
         self.tokenizer
             .next_symbol_expect_eq('{', "message constant")?;
-        while !self.tokenizer.lookahead_is_symbol('}')? {
+        let n = self.next_message_constant_field_name()?;
+        let v = self.next_field_value()?;
+        r.fields.insert(n, v);
+        while self.tokenizer.next_symbol_if_eq(',')? {
             let n = self.next_message_constant_field_name()?;
             let v = self.next_field_value()?;
             r.fields.insert(n, v);
